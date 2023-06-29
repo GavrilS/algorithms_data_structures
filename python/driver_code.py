@@ -1,11 +1,15 @@
 from tree_implementation import Tree, BinaryTree
 from stack_implementation import BasicStack
 from tree_traversal import TreeHelper
+from search_algorithms import binary_search
 
 def main():
     # test_general_tree()
-    test_binary_tree()
+    # test_binary_tree()
     # test_stack()
+    search_list = [0, 1, 3, 7, 9, 10, 15]
+    binary_search(search_list, 15)
+
 
 
 def test_stack():
