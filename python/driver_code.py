@@ -2,6 +2,8 @@ from tree_implementation import Tree, BinaryTree
 from stack_implementation import BasicStack
 from tree_traversal import TreeHelper
 from search_algorithms import binary_search, interpolation_search
+from buble_sort import buble_sort
+
 
 def main():
     # test_general_tree()
@@ -9,8 +11,10 @@ def main():
     # test_stack()
     search_list = [-3, 0, 1, 3, 7, 9, 10, 15]
     # binary_search(search_list, 15)
-    print(interpolation_search(search_list, -2))
+    # print(interpolation_search(search_list, -2))
 
+    sort_list = [0, 1, 10, 3, -1, 25, 17]
+    buble_sort(sort_list)
 
 
 def test_stack():
@@ -25,19 +29,20 @@ def test_stack():
     print("Removed from stack: ", top_item)
     print('Stack is: ', stack.__repr__())
 
+
 def test_binary_tree():
     # bt = BinaryTree(
-    #     'Root', 
-    #     BinaryTree('Child1', 
+    #     'Root',
+    #     BinaryTree('Child1',
     #         BinaryTree(
-    #             'Child2', None, 
-    #                 BinaryTree('Child4')), 
+    #             'Child2', None,
+    #                 BinaryTree('Child4')),
     #         BinaryTree('Child3')),
-    #     BinaryTree('Child5', 
+    #     BinaryTree('Child5',
     #         BinaryTree('Child6'),
     #         BinaryTree('Child7'))
     # )
-    
+
     bt = BinaryTree('Root')
     bt.left_node = BinaryTree('Child1')
     bt.left_node.left_node = BinaryTree('Child3')
@@ -47,8 +52,6 @@ def test_binary_tree():
     bt.right_node.right_node = BinaryTree('Child6')
     th = TreeHelper()
     th.bt_dfs(bt)
-
-
 
 
 def test_general_tree():
@@ -65,5 +68,6 @@ def test_general_tree():
         print(child)
         print(child.children)
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
