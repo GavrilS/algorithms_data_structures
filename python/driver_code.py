@@ -3,6 +3,7 @@ from stack_implementation import BasicStack
 from tree_traversal import TreeHelper
 from search_algorithms import binary_search, interpolation_search
 from buble_sort import buble_sort
+from insertion_sort import insertion_sort
 
 
 def main():
@@ -13,8 +14,9 @@ def main():
     # binary_search(search_list, 15)
     # print(interpolation_search(search_list, -2))
 
-    sort_list = [0, 1, 10, 3, -1, 25, 17]
-    buble_sort(sort_list)
+    sort_list = [0, 1, 10, 3, -1, 25, 17, 40, 39]
+    # buble_sort(sort_list)
+    insertion_sort(sort_list)
 
 
 def test_stack():
