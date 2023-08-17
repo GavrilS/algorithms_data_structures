@@ -6,6 +6,7 @@ from buble_sort import buble_sort
 from insertion_sort import insertion_sort
 from selection_sort import selection_sort
 from merge_sort import mergesort
+from shell_sort import shell_sort
 
 
 def main():
@@ -21,7 +22,8 @@ def main():
     # buble_sort(sort_list)
     # insertion_sort(sort_list)
     # selection_sort(sort_list)
-    print('mergesort: ', mergesort(sort_list))
+    # print('mergesort: ', mergesort(sort_list))
+    print('shellsort: ', shell_sort(sort_list))
 
 
 def test_stack():
