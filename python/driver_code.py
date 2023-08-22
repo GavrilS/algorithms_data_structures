@@ -17,7 +17,7 @@ def main():
     # binary_search(search_list, 15)
     # print(interpolation_search(search_list, -2))
 
-    sort_list = [0, 1, 10, 3, -1, 25, 17, 40, 39, -5, 41]
+    sort_list = [0, 1, 10, 3, -1, 25, 17, 40, 39, -5, 41, 3]
     # sort_list = [0, 1, 10, 3, -1, 25, 17, 40, 39, 41]
     # buble_sort(sort_list)
     # insertion_sort(sort_list)
